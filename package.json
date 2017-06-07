@@ -1,0 +1,25 @@
+{
+  "name": "udemy-mean-course-nodeproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torbrin/udemy-mean-course-nodeproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torbrin/udemy-mean-course-nodeproject/issues"
+  },
+  "homepage": "https://github.com/torbrin/udemy-mean-course-nodeproject#readme",
+  "dependencies": {
+    "async": "^2.4.1",
+    "express": "^4.15.3",
+    "socket.io": "^2.0.2"
+  }
+}

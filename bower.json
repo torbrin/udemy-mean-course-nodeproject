@@ -1,0 +1,20 @@
+{
+  "name": "udemy-mean-course-nodeproject",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Ed Spry <ed.spry@ericsson.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/torbrin/udemy-mean-course-nodeproject",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
