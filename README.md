@@ -1,1 +1,2 @@
-# udemy-mean-course
+# Udemy MEAN course 
+## Node.js project
