@@ -5,6 +5,7 @@ var app = express();
 
 var port = process.env.PORT || 3000;
 var eventRouter = require('./src/routes/eventRoutes');
+var dbRouter = require('./src/routes/dbRoutes');
 
 app.use(express.static('public'));
 app.use(express.static('bower_components'));
@@ -15,6 +16,7 @@ app.set('view engine', 'ejs');
 
 
 app.use('/Events', eventRouter);
+app.use('/Db', dbRouter);
 
 app.get('/', function(req, res, next){
     res.render('index', {
