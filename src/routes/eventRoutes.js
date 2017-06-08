@@ -84,9 +84,21 @@ eventRouter.route('/')
         });
     });
 
-eventRouter.route('/event')
+eventRouter.route('/:id')
     .get(function(req, res) {
-        res.send('Hello Single Event!');
+        var id = req.params.id;
+        res.render('event', {
+            list: ['first event', '2nd event', '3rd event'],
+            nav: [
+                {Link: 'Services', Text: 'Services'},
+                {Link: 'Portfolio', Text: 'Portfolio'},
+                {Link: 'About', Text: 'About'},
+                {Link: 'Team', Text: 'Team'},
+                {Link: 'Contact', Text: 'Contact'},
+                {Link: 'Events', Text: 'Events'}
+            ],
+            events: eventsData[id]
+        });
     });
 
 module.exports = eventRouter;
